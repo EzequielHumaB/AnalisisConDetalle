@@ -7,19 +7,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AnalisisDetalle.Entidades
 {
-   public class Analisis
+    public class AnalisisDetalle
     {
         [Key]
         public int AnalisisId { get; set; }
         public int TipoId { get; set; }
-        public int UsuarioId { get; set; }
-        
-        public Analisis()
-        {
-            AnalisisId = 0;
-            TipoId = 0;
-            UsuarioId = 0;
-        }
+        string resultado { get; set; }
+
+
 
     }
 }
