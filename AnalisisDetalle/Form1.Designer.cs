@@ -48,6 +48,7 @@
             this.registrarAnalisisToolStripMenuItem.Name = "registrarAnalisisToolStripMenuItem";
             this.registrarAnalisisToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
             this.registrarAnalisisToolStripMenuItem.Text = "Registrar Analisis";
+            this.registrarAnalisisToolStripMenuItem.Click += new System.EventHandler(this.RegistrarAnalisisToolStripMenuItem_Click);
             // 
             // Form1
             // 

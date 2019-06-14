@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AnalisisDetalle.UI.Registros;
 
 namespace AnalisisDetalle
 {
@@ -15,6 +16,13 @@ namespace AnalisisDetalle
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void RegistrarAnalisisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AnalisisRegistro analisis = new AnalisisRegistro();
+            analisis.StartPosition = FormStartPosition.CenterScreen;
+            analisis.Show();
         }
     }
 }
