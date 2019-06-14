@@ -14,7 +14,19 @@ namespace AnalisisDetalle.Entidades
         public int TipoId { get; set; }
         string resultado { get; set; }
 
-
+        public AnalisisDetalle()
+        {
+            AnalisisId = 0;
+            TipoId = 0;
+            resultado = string.Empty;
+        }
+        
+        public AnalisisDetalle(int idanalisis, int idtipo, string res)
+        {
+            AnalisisId = idanalisis;
+            TipoId = idtipo;
+            resultado = res;
+        }
 
     }
 }

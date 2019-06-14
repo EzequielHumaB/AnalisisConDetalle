@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AnalisisDetalle.Entidades
 {
-   public class Usuario
+   public class Usuarios
     {
         [Key]
         public int UsuarioId { get; set; }
@@ -16,7 +16,7 @@ namespace AnalisisDetalle.Entidades
         public string usuario { get; set; }
         public DateTime fechaIngreso { get; set; }
        
-        public Usuario()
+        public Usuarios()
         {
             UsuarioId = 0;
             nombre = string.Empty;

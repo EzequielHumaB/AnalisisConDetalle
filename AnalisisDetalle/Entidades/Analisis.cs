@@ -13,12 +13,14 @@ namespace AnalisisDetalle.Entidades
         public int AnalisisId { get; set; }
         public int TipoId { get; set; }
         public int UsuarioId { get; set; }
+        public virtual List<AnalisisDetalle> Detalles { get; set; }
         
         public Analisis()
         {
             AnalisisId = 0;
             TipoId = 0;
             UsuarioId = 0;
+            Detalles = new List<AnalisisDetalle>();
         }
 
     }
