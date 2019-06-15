@@ -13,7 +13,7 @@ namespace AnalisisDetalle.Entidades
         public int UsuarioId { get; set; }
         public string nombre { get; set; }
         public string email { get; set; }
-        public string usuario { get; set; }
+        public string cedula { get; set; }
         public DateTime fechaIngreso { get; set; }
        
         public Usuarios()
@@ -21,7 +21,7 @@ namespace AnalisisDetalle.Entidades
             UsuarioId = 0;
             nombre = string.Empty;
             email = string.Empty;
-            usuario = string.Empty;
+            cedula = string.Empty;
             fechaIngreso = DateTime.Now;
         }
 

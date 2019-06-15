@@ -15,7 +15,9 @@ namespace AnalisisDetalle.DAL
         public DbSet<Usuarios> usuarios { get; set; }
         public DbSet<TiposAnalisis> tiposAnalises { get; set; }
         public Contexto() :base("ConStr")
-        { }
+        {
+            Database.SetInitializer<Contexto>(new DropCreateDatabaseIfModelChanges<Contexto>());
+        }
 
     }
 }

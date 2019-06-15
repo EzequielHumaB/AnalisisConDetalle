@@ -11,12 +11,12 @@ namespace AnalisisDetalle.Entidades
     {
         [Key]
         public int TipoId { get; set; }
-        public string Resultado { get; set; }
+        public string Descripcion { get; set; }
 
         public TiposAnalisis()
         {
             TipoId = 0;
-            Resultado = string.Empty;
+            Descripcion = string.Empty;
         }
     }
 }

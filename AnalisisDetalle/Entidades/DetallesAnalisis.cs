@@ -12,20 +12,18 @@ namespace AnalisisDetalle.Entidades
         [Key]
         public int AnalisisId { get; set; }
         public int TipoId { get; set; }
-        string resultado { get; set; }
+        public string resultado { get; set; }
+        public string Descripcion {get; set; }
 
-        public DetallesAnalisis()
+     
+       
+
+        public DetallesAnalisis(int id,int idtipo, string descripcion, string Res)
         {
-            AnalisisId = 0;
-            TipoId = 0;
-            resultado = string.Empty;
-        }
-        
-        public DetallesAnalisis(int idanalisis, int idtipo, string res)
-        {
-            AnalisisId = idanalisis;
+            AnalisisId = id;
             TipoId = idtipo;
-            resultado = res;
+            Descripcion = descripcion;
+            resultado = Res;
         }
 
     }

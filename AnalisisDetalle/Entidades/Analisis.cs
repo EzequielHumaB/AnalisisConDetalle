@@ -11,14 +11,14 @@ namespace AnalisisDetalle.Entidades
     {
         [Key]
         public int AnalisisId { get; set; }
-        public int TipoId { get; set; }
+        public DateTime Fecha { get; set; }
         public int UsuarioId { get; set; }
         public virtual List<DetallesAnalisis> Detalles { get; set; }
         
         public Analisis()
         {
             AnalisisId = 0;
-            TipoId = 0;
+            Fecha = DateTime.Now;
             UsuarioId = 0;
             Detalles = new List<DetallesAnalisis>();
         }
